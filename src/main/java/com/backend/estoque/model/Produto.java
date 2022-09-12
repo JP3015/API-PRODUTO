@@ -34,8 +34,6 @@ public class Produto {
     private BigDecimal valor;
 	
 
-	
-	
 
 	// METODOS GET E SET
 	
