@@ -20,31 +20,31 @@ preço diretamente no código, dar deploy, conseguimos alterar via api de forma 
 
 ## ENDPOINTS
 
-* Listar produto e/ou pedido.
+* Listar produto e/ou pedido<br></br>
 GET http://localhost:8080/produto
 GET http://localhost:8080/pedido
 
 
-* Detalhes do produto e/ou pedido.
+* Detalhes do produto e/ou pedido<br></br>
 GET http://localhost:8080/produto/1
 GET http://localhost:8080/pedido/1
 
 
-* Listar o produto pelo nome.
+* Listar o produto pelo nome<br></br>
 GET http://localhost:8080/produto/pesquisa/{NOME}
 
 
-* Apagar produto e/ou pedido.
+* Apagar produto e/ou pedido<br></br>
 DELETE http://localhost:8080/produto/1
 DELETE http://localhost:8080/pedido/1
 
 
-* Cadastrar produto e/ou pedido.
+* Cadastrar produto e/ou pedido<br></br>
 POST http://localhost:8080/produto
 POST http://localhost:8080/pedido
 
 
-* Alterar produto e/ou pedido.
+* Alterar produto e/ou pedido<br></br>
 POST http://localhost:8080/produto/1
 POST http://localhost:8080/pedido/1
 
