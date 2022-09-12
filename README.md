@@ -26,25 +26,25 @@ GET http://localhost:8080/pedido
 
 
 * Detalhes do produto e/ou pedido<br></br>
-GET http://localhost:8080/produto/1
-GET http://localhost:8080/pedido/1
+GET http://localhost:8080/produto/1<br></br>
+GET http://localhost:8080/pedido/1<br></br>
 
 
 * Listar o produto pelo nome<br></br>
-GET http://localhost:8080/produto/pesquisa/{NOME}
+GET http://localhost:8080/produto/pesquisa/{NOME}<br></br>
 
 
 * Apagar produto e/ou pedido<br></br>
-DELETE http://localhost:8080/produto/1
-DELETE http://localhost:8080/pedido/1
+DELETE http://localhost:8080/produto/1<br></br>
+DELETE http://localhost:8080/pedido/1<br></br>
 
 
 * Cadastrar produto e/ou pedido<br></br>
-POST http://localhost:8080/produto
-POST http://localhost:8080/pedido
+POST http://localhost:8080/produto<br></br>
+POST http://localhost:8080/pedido<br></br>
 
 
 * Alterar produto e/ou pedido<br></br>
-POST http://localhost:8080/produto/1
-POST http://localhost:8080/pedido/1
+POST http://localhost:8080/produto/1<br></br>
+POST http://localhost:8080/pedido/1<br></br>
 
