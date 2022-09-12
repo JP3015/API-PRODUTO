@@ -25,13 +25,13 @@ public class Pedido {
 	@NotNull(message = "O nome do produto é obrigatório.")
 	private String nome; 
 	
-    @NotNull(message = "A quantidade do pedida é obrigatório.")
-    @JsonFormat(shape = JsonFormat.Shape.STRING)
-    private int quantidade;
+    	@NotNull(message = "A quantidade do pedida é obrigatório.")
+    	@JsonFormat(shape = JsonFormat.Shape.STRING)
+    	private int quantidade;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING)
-    @Positive(message = "O valor do produto precisa ser positivo.")
-    private BigDecimal valor;
+    	@Positive(message = "O valor do produto precisa ser positivo.")
+    	private BigDecimal valor;
 	
 	
 
