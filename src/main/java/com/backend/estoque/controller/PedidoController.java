@@ -42,11 +42,6 @@ public class PedidoController {
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 	}
 	
-	@GetMapping("/pesquisa/{nome}")
-	public ResponseEntity<List<Pedido>> getByTitle(@PathVariable String nome) {
-		return ResponseEntity.ok(pedidoRepository.findAllByNomeContainingIgnoreCase(nome));
-	}
-	
 	@PostMapping
 	public ResponseEntity<Pedido> post(@Valid @RequestBody Pedido pedido) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(pedidoRepository.save(pedido));

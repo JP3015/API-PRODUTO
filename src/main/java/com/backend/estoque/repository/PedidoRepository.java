@@ -11,5 +11,5 @@ import com.backend.estoque.model.Pedido;
 @Repository
 public interface PedidoRepository extends JpaRepository<Pedido, Long>{
 
-	public List<Pedido> findAllByNomeContainingIgnoreCase(@Param("nome") String nome);
+	public List<Pedido> findAllByid(@Param("ID") Long id);
 }

@@ -1,7 +1,5 @@
 package com.backend.estoque.model;
 
-import java.math.BigDecimal;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,35 +20,28 @@ public class Pedido {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotNull(message = "O nome do produto é obrigatório.")
-	private String nome; 
 	
-    	@NotNull(message = "A quantidade do pedida é obrigatório.")
-    	@JsonFormat(shape = JsonFormat.Shape.STRING)
-    	private int quantidade;
+    @NotNull(message = "A quantidade do pedida é obrigatório.")
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    private int quantidade;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING)
-    	@Positive(message = "O valor do produto precisa ser positivo.")
-    	private BigDecimal valor;
-	
+    @Positive(message = "O valor do produto precisa ser positivo.")
+    private Double valor_uni;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    @Positive()
+    private Double valor_total;
 	
 
 	// METODOS GET E SET
 	
-	public Long getId() {
+    public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public int getQuantidade() {
@@ -61,12 +52,20 @@ public class Pedido {
         this.quantidade = quantidade;
     }
 
-    public BigDecimal getValor() {
-        return valor;
+    public Double getValor_uni() {
+        return valor_uni;
     }
 
-    public void setValor(BigDecimal valor) {
-        this.valor = valor;
+    public void setValor_uni(Double valor_uni) {
+        this.valor_uni = valor_uni;
     }
+
+    public Double getValor_total() {
+        return valor_total;
+    }
+
+    public void setValor_total(Double valor_total) {
+        this.valor_total = valor_uni * quantidade;
+    } 
 	
 }
