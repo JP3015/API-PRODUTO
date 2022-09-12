@@ -21,8 +21,8 @@ preço diretamente no código, dar deploy, conseguimos alterar via api de forma 
 ## ENDPOINTS
 
 * Listar produto e/ou pedido<br></br>
-GET http://localhost:8080/produto
-GET http://localhost:8080/pedido
+GET http://localhost:8080/produto<br></br>
+GET http://localhost:8080/pedido<br></br>
 
 
 * Detalhes do produto e/ou pedido<br></br>
