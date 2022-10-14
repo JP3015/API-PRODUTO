@@ -11,7 +11,7 @@
 	<groupId>com.backend.estoque</groupId>
 	<artifactId>estoque</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ControleEstoque</name>
+	<name>estoque</name>
 	<description>Controle de estoque de produtos.</description>
 	<properties>
 		<java.version>11</java.version>
